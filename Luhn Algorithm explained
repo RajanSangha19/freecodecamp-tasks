@@ -1,0 +1,14 @@
+This page explains how the Luhn Algorithm works.
+
+The code uses a card number as an example (as the Luhn Algorithm may be used for credit card validation). 
+First a card number is inputed (in this case it was provided with the code)
+Next all "-" and " " (dashes and spaces) where removed so the string only contained integers.
+Next a string of all the odd digits were created and this was added up to create sum_of_odd_digits.
+This was also done for all the even digits, however all the even digits where multiplied by 2. This created a variable called number.
+If number was greater than 10, it was converted into a single digit (by diving number by 10 and adding the remainder of number divided by 10).
+Example: number = 12 , 12//10 = 1, 12%10 = 2, 1+2 = 3, number = 3
+The variable "number" was added up to create sum_of_even_digits.
+sum_of_even_digit and sum_of_odd_digits was added together to make total.
+If total % 10 == 0 the card number was valid, else the card number is invalid.
+
+This algorithm can help catch typos within credit card numbers whilst being easy to implement and fast to compute.
