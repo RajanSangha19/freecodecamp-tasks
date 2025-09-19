@@ -1,0 +1,19 @@
+a = np.customarray([1,2,3,4]) # this is how you make an array
+# you can access certain values from this array to make a new array:
+a[[1,0,3]]
+# would give you a new array of 2,1,3
+
+Numpy can also create multi-dimensional arrays:
+
+For example:
+
+a = np.array([
+    [1,2,3],
+    [4,5,6]
+])
+
+a.shape would give the shape of the array: (2,3)
+a.ndim = how many dimensions is the array? : 2
+a.size = 6 because there are 6 numbers
+
+Indexing multi-dimensional arrays
