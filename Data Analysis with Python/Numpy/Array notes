@@ -17,3 +17,24 @@ a.ndim = how many dimensions is the array? : 2
 a.size = 6 because there are 6 numbers
 
 Indexing multi-dimensional arrays
+
+a[0] = 1, 2, 3
+a[0][0] = 1
+or 
+a[0,0] = 1
+a[:1] = [1,2,3]
+a[:][:1] = [1,2],
+           [4,5]
+
+Changing the array
+
+a[1] = np.array([10,10,10])
+the array is now:
+a = [1,2,3]
+    [10,10,10]
+or 
+a[1] = 10
+a = [1,2,3]
+    [10,10,10]
+
+
