@@ -1,0 +1,19 @@
+Vectorzing an operation involves applying the whole operation to the array.
+
+Example: 
+
+a = np.array([0,1,2,3])
+a + 10 would equal 10,11,12,13 # this operation would apply to every index of the array
+
+# Important -- Numpy would not adjust array "a" but rather create a new array with the changed values: array([10,11,12,13)]
+
+if you wanted to change a, you would just assign the new values to a 
+a = a + 10 --->  a = ([10,11,12,13)]
+
+you can also use other arrays to change an array
+however the arrays must have the same shape
+
+b = np.array([1,2,3,4)]
+a = np.array([5,6,7,8])
+a = a * b
+a = np.array([1,12,21,32])
