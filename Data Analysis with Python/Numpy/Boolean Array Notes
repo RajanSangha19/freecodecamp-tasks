@@ -1,1 +1,22 @@
+These notes will go through boolean arrays:
 
+This is a boolean array : a = np.array([True,False,False,True])
+outputting this array will give array([0,3]) as index 0 and 3 are true
+
+we can use this for many examples:
+
+here is an array:
+
+b = np.array([0,1,2,3])
+if I run b>=2 I will get:
+array([False,False,True,True])
+
+so if I do this:
+b([b>=2])
+I will get the output of:
+array([2,3])
+So this tells me that index 2 and 3 are bigger or equal to 2 
+
+you must have array([condition]) and this will output the indexes that statisfy the condition
+
+###### or is a | and and is a & when expressing conditions in the array #############
